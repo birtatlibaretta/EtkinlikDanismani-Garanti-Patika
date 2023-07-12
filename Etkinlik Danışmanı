@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Etkinlik {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sıcaklık;
+
+        System.out.println("Hava Kaç Derece?: ");
+        sıcaklık = sc.nextInt();
+
+        if (sıcaklık < 5) {
+            System.out.println("Önerilen Etkinlik: Kar Topu Savaşı");
+        } else if (sıcaklık >= 5 && sıcaklık <= 15) {
+            System.out.println("Önerilen Etkinlik: Müze Gezisi");
+        } else if (sıcaklık >= 15 && sıcaklık <= 25) {
+            System.out.println("Önerilen Etkinlik: Doğa Gezisi");
+        } else {
+            System.out.println("Önerilen Etkinlik: Sahilde Piknik");
+        }
+    }
+}
